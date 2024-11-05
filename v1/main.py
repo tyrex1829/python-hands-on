@@ -13,3 +13,17 @@ isVote = True
 print(name)
 print(age)
 print(isVote)
+
+# If Else
+if x > 1:
+    print("Big")
+elif x > 0:
+    print("Positive")
+else:
+    print("negative")
+
+# Functions
+def greet(name):
+    return f"Hello! {name}"
+
+print(greet(name))
