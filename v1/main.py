@@ -45,3 +45,8 @@ class Car:
 
 myCar = Car("Benz")
 print(myCar.model)
+
+# Arrays
+fruits = ["Apple", "Mango", "Banana"]
+
+print(fruits[0])
