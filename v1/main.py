@@ -50,3 +50,13 @@ print(myCar.model)
 fruits = ["Apple", "Mango", "Banana"]
 
 print(fruits[0])
+
+# Scope of variable
+x = 10
+
+def my_function():
+    y = 5
+    print(y)
+
+my_function()
+print(x)
