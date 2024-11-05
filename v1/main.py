@@ -94,3 +94,24 @@ def check_sign(a):
         print("zero")
 
 print(check_sign(1))
+
+# task 3 
+def greet_user(nameee):
+    print(f"Hey, {nameee}")
+
+greet_user("xyz")
+
+# Task 5
+listOfNumbersToCalculateSum = [1, 2, 3, 4, 5]
+total = sum(listOfNumbersToCalculateSum)
+avg = total / len(listOfNumbersToCalculateSum)
+
+def sum(x):
+    for num in x:
+        sum += num
+    
+def len(x):
+    x.length()
+
+print(total)
+print(avg)
