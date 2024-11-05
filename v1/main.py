@@ -27,3 +27,13 @@ def greet(name):
     return f"Hello! {name}"
 
 print(greet(name))
+
+# Object
+person = {
+    "name": "tyrex",
+    "age": 24
+}
+
+print(person)
+print(person["name"])
+print(person["age"])
