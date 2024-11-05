@@ -78,13 +78,19 @@ unique_values = {1, 2, 2, 2, 3, 3, 3}
 unique_values.discard(10)
 print(unique_values)
 
-# Tasks 
+# Task 1
 abc = 1
 abcDot = 1.1
 abcName = "Saksham"
 abcBool = True
 
-print(f"Name: {name}")
-print(f"Age: {age}")
-print(f"Height: {height}")
-print(f"Is a student: {is_student}")
+# Task 2
+def check_sign(a):
+    if a > 0:
+        print("positive")
+    elif a < 0:
+        print("negetive")
+    else:
+        print("zero")
+
+print(check_sign(1))
