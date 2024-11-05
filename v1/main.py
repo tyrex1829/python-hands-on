@@ -37,3 +37,11 @@ person = {
 print(person)
 print(person["name"])
 print(person["age"])
+
+# Classes
+class Car:
+    def __init__(self, model):
+        self.model = model
+
+myCar = Car("Benz")
+print(myCar.model)
