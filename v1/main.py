@@ -60,3 +60,7 @@ def my_function():
 
 my_function()
 print(x)
+
+# Floor division
+result = 10 // 3
+print(result)
