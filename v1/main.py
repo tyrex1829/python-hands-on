@@ -28,7 +28,7 @@ def greet(name):
 
 print(greet(name))
 
-# Object
+# Object -> Dictonaries
 person = {
     "name": "tyrex",
     "age": 24
@@ -64,3 +64,16 @@ print(x)
 # Floor division
 result = 10 // 3
 print(result)
+
+# List
+numberss = [1, 2, 3]
+numberss.append(4)
+numberss.insert(1, 9)
+print(numberss[-1]) # Last element
+print(numberss[-2]) # Second last element
+print(numberss)
+
+# Set
+unique_values = {1, 2, 2, 2, 3, 3, 3}
+unique_values.discard(10)
+print(unique_values)
