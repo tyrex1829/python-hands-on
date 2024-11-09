@@ -25,7 +25,7 @@ object = {
 
 print(list(object.keys())[0])
 
-# 
+# Reverse a string
 
 def reverseEachWordOfTheString(name):
     nameToList = list(name)
@@ -35,3 +35,8 @@ def reverseEachWordOfTheString(name):
 
 ans = reverseEachWordOfTheString("tyrex")
 print(ans)
+
+# read text file content
+
+a = open("../txt.txt","r")
+print(a.read())
