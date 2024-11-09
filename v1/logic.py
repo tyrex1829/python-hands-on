@@ -24,3 +24,14 @@ object = {
 }
 
 print(list(object.keys())[0])
+
+# 
+
+def reverseEachWordOfTheString(name):
+    nameToList = list(name)
+    nameToList.reverse()
+    reversedName = "".join(nameToList)
+    return reversedName
+
+ans = reverseEachWordOfTheString("tyrex")
+print(ans)
