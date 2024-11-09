@@ -40,3 +40,8 @@ print(ans)
 
 a = open("../txt.txt","r")
 print(a.read())
+
+# Write to a txt file
+
+writeToFile = open("../txt.txt", "w")
+writeToFile.write("because 10x aint enough")
