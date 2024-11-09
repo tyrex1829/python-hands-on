@@ -35,6 +35,7 @@ person = {
 }
 
 print(person)
+print(list(person.keys())[0])
 print(person["name"])
 print(person["age"])
 
