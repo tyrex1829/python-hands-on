@@ -196,6 +196,40 @@ print(checkTypeHintInCompileTime)
 # map filter find
 
 numberList = [1, 2, 3, 4]
+
 # squaredList = map()
+
 ress = map(str, numberList)
 print(list(ress))
+
+# Calculator class 
+
+class Calculator:
+    def __init__(self):
+        pass
+    
+    def addition(self, a: int, b: int) -> int : 
+        return a + b
+
+    def subtraction(self, a: int, b: int) -> int :
+        return a - b
+
+    def multiplication(self, a: int, b: int) -> int :
+        return a * b
+    
+    def division(self, a: int, b: int) -> int :
+        if b == 0:
+            return f"can't complete the operation because of {b}"
+        return a / b
+
+operation = Calculator()
+add = operation.addition(5, 1)
+sub = operation.subtraction(5, 1)
+mul = operation.multiplication(5, 1)
+div = operation.division(5, 1)
+div2 = operation.division(5, 0)
+print(add)
+print(sub)
+print(mul)
+print(div)
+print(div2)
