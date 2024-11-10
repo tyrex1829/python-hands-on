@@ -54,3 +54,22 @@ my_set = {1, 2, 3}
 my_set.pop()
 print(my_set)
 
+my_set.add(4)
+print(my_set)
+
+my_set.update([5])
+print(my_set)
+
+# 
+
+# names=["Saksham", "Ankit", "Tyrex"]
+# with open("./operations.py", "w") as file:
+#     file.write('/n'.join(names) + '\n')
+
+# 
+
+with open("../txt.txt", "r") as input_file, open("../capitalized_names.txt", "w") as output_file:
+    for line in input_file:
+        capitalized_name = line.strip().capitalized()
+        output_file.write(capitalized_name + "\n")
+print("done")
