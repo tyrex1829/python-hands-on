@@ -73,3 +73,19 @@ with open("../txt.txt", "r") as input_file, open("../capitalized_names.txt", "w"
         capitalized_name = line.strip().capitalized()
         output_file.write(capitalized_name + "\n")
 print("done")
+
+# 
+
+class Person:
+    # constructor
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # 
+    def introduce(self):
+        return f"Hey, this is {self.name}, age: {self.age}."
+
+person1 = Person("Tyrex", 24)
+
+print(person1.introduce())
