@@ -74,7 +74,7 @@ with open("../txt.txt", "r") as input_file, open("../capitalized_names.txt", "w"
         output_file.write(capitalized_name + "\n")
 print("done")
 
-# 
+# Classes
 
 class Person:
     # constructor
@@ -89,3 +89,26 @@ class Person:
 person1 = Person("Tyrex", 24)
 
 print(person1.introduce())
+
+# Encapsulation -> Data Hiding By Using underscore prefixes
+# Single Underscore -> _ -> Protected Attribute -> no direct access
+# Double Underscore -> __ -> Private Attribute -> no access directly outside of class
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self._account_type = "Savings"
+        self.__balance = balance
+    
+    def get_balance(self):
+        return self.__balance
+    
+    def deposite(self, amount):
+        if amount < 0:
+            return "Invalid deposite amount"
+        self.__balance += amount
+        return f"{amount} deposited. New balance is {self.__balance}"
+
+account1 = BankAccount("John Doe", 1000);
+print(account1.get_balance())
+print(account1.deposite(500))
