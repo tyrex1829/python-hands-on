@@ -180,3 +180,16 @@ class Student:
     
 student1 = Student("Tyrex", "9.5")
 print(student1.get_grade())
+
+# Type hints
+
+def greet(name: str) -> str:
+    return f"Hello, {name}"
+
+print(greet("Tyrex"))
+print(greet(123))
+
+checkTypeHintInCompileTime: str = "My Name"
+checkTypeHintInCompileTime = 123
+print(checkTypeHintInCompileTime)
+
