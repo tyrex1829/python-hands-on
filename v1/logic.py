@@ -1,3 +1,5 @@
+"""  Logic building file to get use to for python code  """
+
 x = 0
 y = "name"
 
@@ -45,3 +47,10 @@ print(a.read())
 
 writeToFile = open("../txt.txt", "w")
 writeToFile.write("because 10x aint enough")
+
+# All methods of sets
+
+my_set = {1, 2, 3}
+my_set.pop()
+print(my_set)
+
