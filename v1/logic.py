@@ -168,3 +168,15 @@ dog = Dog()
 make_sound(bird)
 make_sound(dog)
 
+# Type hints with classes
+
+class Student:
+    def __init__(self, name: str, grade: float):
+        self.name: str = name
+        self.grade: float = grade
+
+    def get_grade(self) -> float:
+        return self.grade
+    
+student1 = Student("Tyrex", "9.5")
+print(student1.get_grade())
