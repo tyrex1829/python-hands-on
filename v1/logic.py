@@ -109,6 +109,26 @@ class BankAccount:
         self.__balance += amount
         return f"{amount} deposited. New balance is {self.__balance}"
 
-account1 = BankAccount("John Doe", 1000);
+account1 = BankAccount("John Doe", 1000)
 print(account1.get_balance())
 print(account1.deposite(500))
+
+# Class Variables and Instance Variable
+# Class Variable -> Shared across all instances of a class, Defined outside of any method
+# Instance Variables -> Specific to each instance object.
+
+class Human:
+    species = "Homo sapiens"
+
+    def __init__(self, name):
+        self.name = name
+
+human1 = Human("Tyrex")
+human2 = Human("Saksham")
+
+print(human1.species)
+print(human2.species)
+
+Human.species = "Homo sapiens sapiens"
+
+print(human1.species)
