@@ -148,3 +148,23 @@ class Dog(Animal):
     
 dog = Dog("Buddy")
 print(dog.speak())
+
+# Polymorphism -> Compile time polymorphism and Run time polymorphism
+
+class Bird:
+    def sound(self):
+        return "Chirp Chirp"
+    
+class Dog:
+    def sound(self):
+        return "Bark Bark"
+    
+def make_sound(animal):
+    print(animal.sound())
+
+bird = Bird()
+dog = Dog()
+
+make_sound(bird)
+make_sound(dog)
+
