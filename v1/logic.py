@@ -132,3 +132,19 @@ print(human2.species)
 Human.species = "Homo sapiens sapiens"
 
 print(human1.species)
+
+# Inheritance
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return "can speak"
+    
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+    
+dog = Dog("Buddy")
+print(dog.speak())
